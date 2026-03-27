@@ -11,7 +11,7 @@ You can chat with me `@darukutsu:hento.org` or come and hang out with boys on [a
 </p>
 
 
-| <img align="center" width=900 src="./profile/stats.svg" alt="Darukutsu's stats" /> | <a href="https://github.com/darukutsu/dotfiles"><img align="left" src="./profile/pin.svg" alt="dotfiles" /></a> <img align="left" src="./profile/pin.svg" alt="programming langs" /> |
+| <img align="center" width=900 src="./profile/stats.svg" alt="Darukutsu's stats" /> | <a href="https://github.com/darukutsu/dotfiles"><img align="left" src="./profile/pin.svg" alt="dotfiles" /></a> <img align="left" src="./profile/langs.svg" alt="programming langs" /> |
 | -- | -- |
 
 <!--
