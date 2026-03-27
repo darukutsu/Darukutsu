@@ -17,9 +17,28 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true
+          options: username=${{ github.repository_owner }}&show=reviews,discussions_started,discussions_answered,prs_merged&include_all_commits=true&show_icons=true&theme=transparent&bg_color=00000000&hide_border=true
           path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          #token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Generate lang card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&size_weight=0.5&count_weight=0.5&layout=compact&langs_count=10&hide=css,javascript,html&exclude_repo=Zonos&theme=transparent&hide_border=true
+          path: profile/langs.svg
+          #token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Generate pin card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=dotfiles&theme=transparent&hide_border=true
+          path: profile/pin.svg
+          #token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Commit cards
         run: |
